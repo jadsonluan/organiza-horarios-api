@@ -1,12 +1,16 @@
 import 'dotenv/config';
 import express from 'express';
 import loadSchedule from './data.js';
+import cors from 'cors';
 
 var app = express();
+app.use(cors());
 
 var loading = true;
 
-var horarios = loadSchedule().then(r => {
+var horarios;
+
+loadSchedule().then(r => {
   horarios = r;
   loading = false;
 })
