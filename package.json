@@ -4,7 +4,7 @@
   "description": "Uma API para extrair dados de planilhas .csv utilizadas na matrícula de Computação@UFCG",
   "main": "api/app.js",
   "scripts": {
-    "start": "nodemon --exec babel-node api/app.js",
+    "start": "node app/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
